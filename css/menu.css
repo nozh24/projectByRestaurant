@@ -1,0 +1,190 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  background: #fff;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+
+  background: url(../assets/img/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+/*Шапка*/
+.menu{
+  /*z-index: 10;
+  position: fixed;*/
+  background: #fff;  
+  height: 65px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.menu_section{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  line-height: 65px;
+}
+.menu_item > ul{
+  display: flex;
+  justify-content: space-between;
+}
+.menu_link{
+  color: #000;
+  text-decoration: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+  transition: .3s linear;
+}
+.menu_link:hover{
+  color: #f0932b;
+}
+
+/*Первый экран*/
+.intro{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.intro_media{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /*background:#ccc;*/
+}
+.intro_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+.intro_content{
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro_content_text, .into_content_tilda{
+  color: #000;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 30px;
+}
+.intro_content_tilda{
+  font-size: 45px;  
+  font-weight: 600;
+}
+.intro_content_text{
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 35px;
+}
+.intro_content_text p{
+  margin-top: 7px;
+}
+
+/*Ограничение ширины блоков*/
+.blocks_width{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*Стилизация заголовков каждой секции*/
+.title_item{
+  height: 150px;
+  background: #fff;
+  margin-top: 30px;
+}
+.title{
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 150px;
+  text-align: center;
+}
+
+/*О нас*/
+.about_info{  
+  background: #fff;
+  height: 850px;  
+  margin-bottom: 50px;
+  padding: 60px;
+  text-align: center;
+}
+.about_info:last-child{
+    height: 900px;
+}
+.info{
+  margin-top: 50px;
+}
+.about_img > img{
+  width: 700px;
+  height: 451px;
+}
+.about_content{
+  text-transform: uppercase;
+  margin: 40px 0;
+  font-size: 30px;
+  line-height: 45px;
+}
+.about_subcontent{
+  font-size: 25px;
+  line-height: 45px;
+  color: #718093;
+}
+
+/*Меню*/
+.underline_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #718093;
+}
+.name_food{
+  margin: 30px 0 10px;
+  text-align: left;
+  color: #000;
+}
+.volume_food , .price_food{
+  margin-top: 25px;
+}
+.price_food{
+  font-size: 30px;
+}
+
+/*Подвал*/
+.footer{
+  margin-top: 50px ;
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer_menu p{
+  margin-top: 20px;
+}
+.footer_link{
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s linear;
+}
+.footer_link:hover{
+  color: #f0932b;
+}

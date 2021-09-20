@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Restaurant Surf&Turf</title>
+</head>
+<body>
+	<header class="menu">
+		<div class="menu_section">
+		<nav class="menu_item">
+			<ul>
+				<li><a class="menu_link" href="menu.html">Меню</a></li>
+				<li><a class="menu_link" href="reserve.html">Забронировать место</a></li>
+			</ul>
+		</nav>
+		<div class="logo"> <!-- изображение логотипа по центру шапки -->
+			<img src="assets/img/fish.png" class="logo_img" alt="Изображение логотипа">
+		</div>
+		<nav class="menu_item">
+			<ul>
+				<li><a class="menu_link" href="#aboutUs">О нас</a></li>
+				<li><a class="menu_link" href="#photoAlbum">фотогалерея</a></li>
+				<li><a class="menu_link" href="#contacts">контакты</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<section class="intro"> <!-- на фоне используется видео -->
+		<div class="intro_media">
+			<video class="intro_video" src="assets/video/res2.mp4" autoplay muted loop></video>
+		</div>
+		<div class="intro_content">
+			<img src="assets/img/title1.png" alt="Название ресторана">
+				<div class="intro_content_tilda">
+					<p class="">~</p>
+				</div>
+			<div class="intro_content_text">
+				<p class="">Ресторан мяса</p>
+				<p class="">Рыбы</p>
+				<p class="">Вина</p>
+			</div>
+		</div>
+	</section>
+	<div class="blocks_background">
+	<div class="blocks_width">
+	<section id="aboutUs" class="about">
+		<div class="title_item">
+			<p class="title">О нас</p>
+		</div>
+		<div class="about_info info">
+			<div class="about_img">
+				<img src="assets/img/wine.jpg" alt="Изображение ресторана" class="">
+			</div>
+			<div class="about_text">
+				<p class="about_content">двенадцать столов в самом сердце Перми</p>
+				<p class="about_subcontent">Уральское гостеприимство - в деталях, гладких скатертях и полированном серебре. Это совокупность жестов, определяющих образ жизни. Стол - это то место, где начинается путешествие.</p>
+			</div>
+		</div>
+		<div class="about_info">
+			<div class="about_img">
+				<img src="assets/img/meat.jpg" alt="Изображение ресторана" class="">
+			</div>
+			<div class="about_text">
+				<p class="about_content">Уральские кулинарные традиции с расстояния десяти километров</p>
+				<p class="about_subcontent">Наша кухня - это не перечень ингредиентов и не демонстрация технических возможностей. Это повествование о пермском пейзаже и наших увлечениях.Кулинария - это столкновение идей, техник и культур. Это не математически. Это эмоционально.</p>
+			</div>
+		</div>
+	</section>
+	<section class="photo_album" id="photoAlbum">
+		<div class="title_item">
+			<h2 class="title">Фотогалерея</h2>
+		</div>
+		<div class="album_info">
+			<div class="slider_container" id="slider">
+				<img id="slide_image" class="slide_image">
+			</div>
+			<button class="prev" id='back'>
+				<img class="arrow" src="assets/img/christianity.png" alt="">
+			</button>
+			<button class="next" id='follow'>
+				<img class="arrow reverse" src="assets/img/christianity.png" alt="">
+			</button> 
+			<!-- Кнопки для слайдера -->
+			<!-- <div style="text-align: center;">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+			</div> -->
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="title_item">
+			<h2 class="title">Контакты</h2>
+		</div>
+		<div class="contacts_info">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16918.0765650538!2d56.186178754698574!3d57.991905693544865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8c74c2f6fffaf%3A0xa30da19011185b21!2sPAN%20City!5e0!3m2!1sru!2sru!4v1632046046568!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div class="contacts_content">
+				<div class="work block">
+					<img width="34px" height="34px" src="assets/contacts/clock.png" alt="">
+					<p class="contact_title">Часы работы</p>
+					<p class="contact_text">Открыты ежедневно с понедельника по воскресенье с 10:00 до 22:00</p>
+				</div>
+				<div class="address block">
+					<img width="34px" height="34px" src="assets/contacts/pin.png"  alt="">
+					<p class="contact_title">Адрес</p>
+					<p class="contact_text">г.Пермь, ул. Шоссе Космонавтов, 111, к.43, п.5/1</p>
+				</div>
+				<div class="phone block">
+					<img width="34px" height="34px" src="assets/contacts/complain.png" alt="">
+					<p class="contact_title">Контакты</p>
+					<p class="contact_text">Номер телефона: <a href=""></a> +7 (963)-013-78-59</p>
+					<p class="contact_text">Электронная почта: n.ozh2404@gmail.com</p>	
+				</div>
+				<div class="social_links block">
+					<img width="34px" height="34px" src="assets/contacts/link.png" alt="">
+					<p class="contact_title">Социальные сети</p>
+					<p class="contact_text">Instagram: <a href="https://www.instagram.com/n.ozh24/" target="_blank">public</a></p>
+					<p class="contact_text">VK: <a href="https://vk.com/n.ozh24_shawty" target="_blank">public</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="footer_menu">
+			<img src="assets/img/fish.png" alt="">
+			<p><a class="footer_link" href="menu.html">Меню</a></p>
+			<p><a class="footer_link" href="reserve.html">Забронировать место</a></p>
+		</div>
+		<div class="footer_dev">Developed by Ozhgibesova Nastya</div>
+	</footer>
+	</div>
+	</div>
+	<script src="assets/script/slider.js"></script>
+	<script src="assets/script/button.js"></script>
+</body>
+</html>
