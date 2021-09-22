@@ -8,9 +8,9 @@
 // });
 
 document.addEventListener("DOMContentLoaded", () =>{
-//перебор элементов массива
 const elemBtns = Array.from(document.getElementsByClassName('date_time_button'));
 if (elemBtns != '' && elemBtns != null){
+	//перебор элементов массива
 	for (let elemBtn of elemBtns){
 		elemBtn.addEventListener('click', (event) => {
 			elemBtns.forEach( elem => elem.classList.remove("active"));
