@@ -183,6 +183,13 @@ body{
   color: #f0932b;
 }
 .reserve_calendar tbody td.today {
-  background: rgb(220, 0, 0);
+  background: green;
+  border-radius: 50%;
   color: #fff;
+  /*display: block;*/
+}
+.reserve_calendar tbody td:hover{
+  border:  1px solid green;
+  border-radius: 50%;
+  display: inline-block;
 }
