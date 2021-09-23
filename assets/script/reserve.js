@@ -8,19 +8,19 @@ if (elemBtns != '' || elemBtns != null){
 		elemBtn.addEventListener('click', (event) => {
 			elemBtns.forEach( elem => elem.classList.remove("active"));
 			event.target.classList.toggle("active");
-			//  localStorage.setItem('time', JSON.stringify(elemBtns) );
+			localStorage.setItem('time', event.target.innerText);
 			});
 		};
 	}
-	
-	// localStorage.setItem('', '');
+// Работа со столами
 if (tables != '' || tables != null){
-	//перебор элементов массива
+//перебор элементов массива
 	for (let elemTables of tables){
 		elemTables.addEventListener('click', (event) => {
 			tables.forEach( elem => elem.classList.remove("activeTable"));
 			event.target.classList.toggle("activeTable");
-			});
-		};
-	}
+		});
+	};
+}
+
 })
