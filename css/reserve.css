@@ -145,43 +145,50 @@ body{
 .reserve_small_table_double{
   display: flex;
   justify-content: space-around;
+ 
 }
 /* Отступ нижних блоков  */
 .reserve_big_table_double:last-child, .reserve_small_table_double:last-child{
-  margin-top: 15px;
+  margin-top: 19px;
 }
-.allTables:hover{
+.allTables{
     transition: .4s linear;
 }
-.allTables:hover{
-  -webkit-box-shadow: 13px 15px 20px 9px rgba(72, 110, 223, 0.24);
-  -moz-box-shadow: 13px 15px 20px 9px rgba(72, 110, 223, 0.24);
-  box-shadow: 13px 15px 20px 9px rgba(72, 110, 223, 0.24);
-
-  transform:scale(1.2);
+.activeTable{
+  -webkit-box-shadow: 6px -1px 37px 12px rgba(244, 168, 45, 0.2);
+  -moz-box-shadow: 6px -1px 37px 12px rgba(244, 168, 45, 0.2);
+  box-shadow: 6px -1px 37px 12px rgba(244, 168, 45, 0.2);
+  border-radius: 30%;
 }
-
+.mlTable{
+  margin-left: 50px;
+}
 /* Параметры стола для 2 человек*/
-.table_2{
-  width: 384px;
-  height: 259px;
+.table_4{
+  /* width: 284px;
+  height: 273px;  */
+  width: 277px;
+  height: 251px; 
   margin-left: 20px;
+  
 }
 /*Параметры стола для 4 человек*/
-.table_4{
-  width: 384px;
-  height: 259px;
+.table_5{
+  width: 277px;
+  height: 251px; 
 }
 /*Параметры стола для 6 человек*/
 .table_6{
-  width: 343px;
-  height: 234px;
+  /* width: 343px;
+  height: 234px; */
+  /* width: 277px;
+  height: 251px;  */
   margin-right: 19px;
 }
 /*Параметры стола для 8 человек */
-.table_8{
-  width: 402px;
-  height: 234px;
+.table_10{
+  width: 303px;
+  height: 305px; 
 }
 .title_room{
   display: flex;
