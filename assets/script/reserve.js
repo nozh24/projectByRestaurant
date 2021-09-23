@@ -8,9 +8,12 @@ if (elemBtns != '' || elemBtns != null){
 		elemBtn.addEventListener('click', (event) => {
 			elemBtns.forEach( elem => elem.classList.remove("active"));
 			event.target.classList.toggle("active");
+			//  localStorage.setItem('time', JSON.stringify(elemBtns) );
 			});
 		};
 	}
+	
+	// localStorage.setItem('', '');
 if (tables != '' || tables != null){
 	//перебор элементов массива
 	for (let elemTables of tables){
