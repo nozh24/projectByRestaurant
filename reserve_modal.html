@@ -24,9 +24,6 @@
       </nav>
     </div>
   </header>
-
-
-
   <div class="blocks_width">
     <section id="" class="reserve">
       <div class="reserve_info ">
@@ -83,20 +80,38 @@
             </div>
           </div>
         </div> 
-        <button type="submit" name="buttonSend"><a href="#data_form">Продолжить</a></button>
+        <button type="submit" class="button" name="buttonSend"><a class="button_link"href="#data_form">Продолжить</a></button>
       </div>
     </section>
 
     <div class="reserve_info" id="data_form">
       <div class="reserve_title">Заполните форму</div>
       <div class="reserve_block">
-        <p class="reserve_subtitle">Выберите дату и время</p>
+        <p class="reserve_subtitle">Введите ФИО</p>
         <div class="date_group">
-          <input class="date_input" type="date" name="date" id="dateToday" required="">
+          <input class="text_input" placeholder="Например, Иванов Иван Иванович" type="text" name="date" id="dateToday" required="">
+        </div>
+        <p class="reserve_subtitle mtTitle">Введите электронную почту</p>
+        <div class="date_group">
+          <input class="text_input" placeholder="Например, example@gmail.com" type="text" name="date" id="dateToday"
+            required="">
+        </div>
+        <p class="reserve_subtitle mtTitle">Введите контактный номер телефона</p>
+        <div class="date_group">
+          <input class="text_input" placeholder="Например, +7(888) 888-88-88" type="text" name="date" id="dateToday"
+            required="">
+        </div>
+        <p class="reserve_subtitle mtTitle">Комментарии к бронированию</p>
+        <div class="date_group">
+          <input class="text_input" placeholder="Напишите пожелания при необходимости" type="text" name="date" id="dateToday"
+            required="">
         </div>
       </div>
-      <button type="submit" name="buttonSend"><a href="#data_form">Отправить</a></button>
-    </div> 
+      <button type="submit" class="button" name="buttonSend"><a class="button_link">Отправить</a></button>
+    </div>
+    
+    
+
     <footer class="footer">
       <div class="footer_menu">
         <img src="assets/img/fish.png" alt="">

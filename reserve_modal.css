@@ -43,7 +43,7 @@ body{
 }
 /*Ширина блоков*/
 .blocks_width{
-  max-width: 1050px;
+  max-width: 1030px;
   margin: 0 auto;
 }
 /*Окно резерва*/
@@ -191,6 +191,44 @@ body{
   align-items: center;
   margin-top: 15px;
 }
+
+/* Кнопка */
+.button{
+  margin-top: 40px;
+  transition: .3s linear;
+  border-radius: 10px;
+  border: 0;
+  background: #ffbe76;
+  padding: 8px 17px;
+}
+.button_link{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 19px;
+  color:#000;
+  transition: .3s linear;
+}
+.button:hover{
+  background: #f0932b;
+}
+.button_link:hover{
+  color:#fff;
+}
+.mtTitle{
+  margin-top: 40px;
+}
+.text_input{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  width: 50%;
+  border:none;
+  border-bottom: 1px solid #ffbe76;
+  outline: none;
+  background-color: transparent;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
 
 /*Подвал*/
  .footer{
