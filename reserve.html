@@ -29,23 +29,17 @@
 				<div class="reserve_title">Забронируйте стол</div>
 				<p class="reserve_subtitle">Выберите дату и время</p>
 				<div class="reserve_block">
-					<table id="calendar2" class="reserve_calendar">
-					  <thead>
-					    <tr><td>‹<td colspan="5"><td>›
-					    <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
-					  <tbody>
-					</table>
-					
+					<input type="date" name="Date" id="dateToday">
 				<div class="reserve_date">
 					<p class="date_title"> 24 сентября - свободные столики</p>
 					<p class="date_time">19:00 - 20:30</p>
 					<div class="date_time_buttons" id="timeButtons">
-						<div class="date_time_button 10:00">10:00</div>
-						<div class="date_time_button 12:00">12:00</div>
-						<div class="date_time_button ">14:00</div>
-						<div class="date_time_button ">16:00</div>
-						<div class="date_time_button" >18:00</div>
-						<div class="date_time_button " >20:00</div>
+						<div class="date_time_button">10:00</div>
+						<div class="date_time_button">12:00</div>
+						<div class="date_time_button">14:00</div>
+						<div class="date_time_button">16:00</div>
+						<div class="date_time_button">18:00</div>
+						<div class="date_time_button">20:00</div>
 					</div>
 					<div class="date_time_description">
 						<p class="">Сумма бронирования стола составляет 500 рублей.</p>
@@ -64,9 +58,12 @@
 				<div class="reserve_small_tables">
 						<div class="reserve_small_table_double">
 							<img class="table_4 allTables" id="1T/4P" src="assets/tables/table_4.png" alt="">	
-							<img class="table_4 allTables mlTable" id="2T/4P" src="assets/tables/table_4.png" alt="">	
+							<img class="table_5 allTables mlTable" id="3T/5P" src="assets/tables/table_5.png" alt="">	
+							<!-- <img class="table_4 allTables mlTable" id="2T/4P" src="assets/tables/table_4.png" alt="">	 -->
 						</div>
-						<img class="table_5 allTables" id="3T/5P" src="assets/tables/table_5.png" alt="">	
+						
+						<img class="table_4 allTables " id="2T/4P" src="assets/tables/table_4.png" alt="">
+						<!-- <img class="table_5 allTables" id="3T/5P" src="assets/tables/table_5.png" alt="">	 -->
 						<div class="reserve_small_table_double" >
 							<img class="table_5 allTables" id="4T/5P" src="assets/tables/table_5.png" alt="">	
 							<img class="table_4 allTables mlTable" id="5T/4P" src="assets/tables/table_4.png" alt="">	
@@ -94,9 +91,9 @@
 			<div class="footer_dev">Developed by Ozhgibesova Nastya</div>
 		</footer>
 		</div>
+		<script src="assets/script/time.js"></script>
 		<script src="assets/script/button.js"></script>
 		<script src="assets/script/calendar.js"></script>
 		<script src="assets/script/reserve.js"></script>
-
 </body>
 </html>

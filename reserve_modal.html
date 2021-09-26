@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="reserve_modal.css">
+  <title>Reserve Surf&Turf</title>
+</head>
+<body>
+  <header class="menu">
+    <div class="menu_section">
+      <nav class="menu_item">
+        <ul>
+          <li><a class="menu_link" href="index.html">Главная страница</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <!-- изображение логотипа по центру шапки -->
+        <img src="assets/img/fish.png" class="logo_img" alt="Изображение логотипа">
+      </div>
+      <nav class="menu_item">
+        <ul>
+          <li><a class="menu_link" href="menu.html">Меню</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="blocks_width">
+    <section id="" class="reserve">
+      <div class="reserve_info ">
+        <div class="reserve_title">Забронируйте стол</div>
+        <div class="reserve_block">
+          <p class="reserve_subtitle">Выберите дату и время</p>
+          <div class="date_group">
+            <input class="date_input" type="date" name="date" id="dateToday" required="">
+          </div>
+          <div class="reserve_date">
+            <div class="date_time_buttons" id="timeButtons">
+              <div class="date_time_button">10:00</div>
+              <div class="date_time_button">12:00</div>
+              <div class="date_time_button">14:00</div>
+              <div class="date_time_button">16:00</div>
+              <div class="date_time_button">18:00</div>
+              <div class="date_time_button">20:00</div>
+            </div>
+            <div class="date_time_description">
+              <p class="">*Сумма бронирования стола составляет 700 рублей.</p>
+              <p class="">*Стоимость забронированного стола вычитается из общей суммы чека.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reserve_subtitle">
+            <p>Выберите столик</p>
+        </div>
+        <div class="title_room">
+            <p>Малый зал</p>
+            <p>Большой зал</p>
+        </div>
+        <div class="reserve_tables">
+          <div class="reserve_small_tables">
+            <div class="reserve_small_table_double">
+              <img class="table_4 allTables" id="1T/4P" src="assets/tables/table_4.png" alt="">
+              <img class="table_5 allTables mlTable" id="3T/5P" src="assets/tables/table_5.png" alt="">
+           </div>
+
+            <img class="table_4 allTables " id="2T/4P" src="assets/tables/table_4.png" alt="">
+            <div class="reserve_small_table_double">
+              <img class="table_5 allTables" id="4T/5P" src="assets/tables/table_5.png" alt="">
+              <img class="table_4 allTables mlTable" id="5T/4P" src="assets/tables/table_4.png" alt="">
+            </div>
+          </div>
+          <div class="reserve_big_tables">
+            <div class="reserve_big_table_double">
+              <img class="table_6 allTables" id="6T/8P" src="assets/tables/table_6.png" alt="">
+              <img class="table_5 allTables mlTable" id="7T/5P" src="assets/tables/table_5.png" alt="">
+            </div>
+            <img class="table_10 allTables" id="8T/10P" src="assets/tables/table_10.png" alt="">
+            <div class="reserve_big_table_double">
+              <img class="table_5 allTables" id="9T/5P" src="assets/tables/table_5.png" alt="">
+              <img class="table_6 allTables mlTable" id="10T/8P" src="assets/tables/table_6.png" alt="">
+            </div>
+          </div>
+        </div> 
+        <button type="submit" name="buttonSend"><a href="#data_form">Продолжить</a></button>
+      </div>
+    </section>
+
+    <div class="reserve_info" id="data_form">
+      <div class="reserve_title">Заполните форму</div>
+      <div class="reserve_block">
+        <p class="reserve_subtitle">Выберите дату и время</p>
+        <div class="date_group">
+          <input class="date_input" type="date" name="date" id="dateToday" required="">
+        </div>
+      </div>
+      <button type="submit" name="buttonSend"><a href="#data_form">Отправить</a></button>
+    </div> 
+    <footer class="footer">
+      <div class="footer_menu">
+        <img src="assets/img/fish.png" alt="">
+        <p><a class="footer_link" href="menu.html">Меню</a></p>
+        <p><a class="footer_link" href="index.html">Главная страница</a></p>
+      </div>
+      <div class="footer_dev">Developed by Ozhgibesova Nastya</div>
+    </footer>
+  </div>
+  <script src="assets/script/time.js"></script>
+  <script src="assets/script/button.js"></script>
+  <script src="assets/script/calendar.js"></script>
+  <script src="assets/script/reserve.js"></script>
+</body>
+</html>
