@@ -27,8 +27,8 @@ function topFunction(){
 	document.documentElement.scrollTop = 0;
 }
 
-function check() {
-  var inp1 = document.getElementById('input1'),
-      inp2 = document.getElementById('input2');
-		  document.getElementById('send').disabled = inp1.value && inp2.value ? false : "disabled";
-}
+// function check() {
+//   var inp1 = document.getElementById('input1'),
+//       inp2 = document.getElementById('input2');
+// 		  document.getElementById('send').disabled = inp1.value && inp2.value ? false : "disabled";
+// }

@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {})
 	const tables = Array.from(document.getElementsByClassName('allTables'));
 	const elemBtns = Array.from(document.getElementsByClassName('date_time_button'));
 	const date = document.getElementById('dateToday');
-	const btnDisabled = document.getElementById("buttonSend");
+	const link = document.getElementById("buttonSend");
+	const btn = document.getElementsByClassName("button");
 	
 	if (elemBtns != '' || elemBtns != null){
 		//перебор элементов массива
@@ -24,23 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {})
 			});
 		};
 	}
-	if (date.value != '' && elemBtn ==  "activeTime" && elemTables.classList ==  "activeTable"){
-		btnDisabled.disabled = false; 
-	}
-	else{
-		btnDisabled.disabled = true;
-	}
-
-	// if (date.value != '' && elemBtns.classList ==  "activeTime" && elemTables.classList ==  "activeTable" ){
-		
-	// } else{
-	// 	console.log("error");
+	// if (date.value != '' && elemBtn.classList ==  "activeTime" && elemTables.classList ==  "activeTable"){
+	// 	link.classList.remove("no_link");
+	// 	btn.classList.remove("btnDisabled");
 	// }
-
-	// function check(){
-	// 	document.getElementById('buttonSend').disabled = false;
-	//   } 
-
+	// else{
+	// 	console.log(false);
+	// }
+	
 	function activeElements(activeElem, activeClass, event){
 		activeElem.forEach( elem => elem.classList.remove(activeClass));
 		event.target.classList.toggle(activeClass);

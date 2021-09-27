@@ -17,6 +17,14 @@ form.addEventListener('submit', (e) =>{
     else if(!regexName.test(fullName.value)){
         messages.push('Введите коректное ФИО');
     }
+    
+    //эл.почта
+    if (email.value === "" || email.value === null ){
+        messages.push("Введите электронную почту");
+    }
+    else if (!regexEmail.test(email.value)){
+        messages.push('Неверная электронная почта');
+    }
 
     //номер телефона
     if (phone.value === "" || phone.value === null ){
@@ -26,13 +34,7 @@ form.addEventListener('submit', (e) =>{
         messages.push('Неверный номер телефон');
     }
 
-    //эл.почта
-    if (email.value === "" || email.value === null ){
-        messages.push("Введите электронную почту");
-    }
-    else if (!regexEmail.test(email.value)){
-        messages.push('Неверная электронная почта');
-    }
+    
     //работа с message
     if (messages.length > 0){
         e.preventDefault();

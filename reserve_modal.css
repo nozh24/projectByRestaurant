@@ -191,15 +191,18 @@ body{
 }
 
 /* Кнопка */
-.btnDisabled:disabled{
-   opacity: 0.5;
+/* .btnDisabled{
+  opacity: 0.5;
 }
+.no_link{
+  pointer-events: none;
+} */
 .button{
   margin-top: 40px;
   transition: .3s linear;
   border-radius: 10px;
   border: 0;
-  background: #ffbe76;
+  background: #ffbe76; 
   padding: 8px 17px;
 }
 .button_link{
@@ -209,9 +212,9 @@ body{
   color:#000;
   transition: .3s linear;
 }
-.button:hover{
-  background: #f0932b;
-}
+/* .button:hover{
+  background: #ffbe76;
+} */
 .button_link:hover{
   color:#fff;
 }
