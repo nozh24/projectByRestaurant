@@ -31,7 +31,7 @@
         <div class="reserve_block">
           <p class="reserve_subtitle">Выберите дату и время</p>
           <div class="date_group">
-            <input class="date_input" type="date" name="date" id="dateToday" required="">
+            <input class="date_input" type="date" id="dateToday" required="">
           </div>
           <div class="reserve_date">
             <div class="date_time_buttons" id="timeButtons">
@@ -41,6 +41,10 @@
               <div class="date_time_button">16:00</div>
               <div class="date_time_button">18:00</div>
               <div class="date_time_button">20:00</div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="checkbox_input" id="checkbox">
+              <label class="checkbox_input" for="checkbox">Забронировать весь день</label>
             </div>
             <div class="date_time_description">
               <p class="">*Сумма бронирования стола составляет 700 рублей.</p>
@@ -84,31 +88,33 @@
       </div>
     </section>
 
-    <div class="reserve_info" id="data_form">
+    <form class="reserve_info" id="data_form">
       <div class="reserve_title">Заполните форму</div>
       <div class="reserve_block">
-        <p class="reserve_subtitle">Введите ФИО</p>
+
+        <p class="reserve_subtitle">Введите ФИО*</p>
         <div class="date_group">
-          <input class="text_input" placeholder="Например, Иванов Иван Иванович" type="text" name="date" id="dateToday" required="">
+          <input class="text_input" placeholder="Например, Иванов Иван Иванович" type="text" id="full_name" >
         </div>
-        <p class="reserve_subtitle mtTitle">Введите электронную почту</p>
+
+        <p class="reserve_subtitle mtTitle">Введите электронную почту*</p>
         <div class="date_group">
-          <input class="text_input" placeholder="Например, example@gmail.com" type="text" name="date" id="dateToday"
-            required="">
+          <input class="text_input" placeholder="Например, example@gmail.com" type="mail" id="email" required>
         </div>
-        <p class="reserve_subtitle mtTitle">Введите контактный номер телефона</p>
+
+        <p class="reserve_subtitle mtTitle">Введите контактный номер телефона*</p>
         <div class="date_group">
-          <input class="text_input" placeholder="Например, +7(888) 888-88-88" type="text" name="date" id="dateToday"
-            required="">
+          <input class="text_input" placeholder="Например, +7(888) 888-88-88" type="text"  id="phone" required>
         </div>
+
         <p class="reserve_subtitle mtTitle">Комментарии к бронированию</p>
         <div class="date_group">
-          <input class="text_input" placeholder="Напишите пожелания при необходимости" type="text" name="date" id="dateToday"
-            required="">
+          <input class="text_input" placeholder="Напишите пожелания при необходимости" type="text">
         </div>
       </div>
+      <div class="error_message" id="error"></div>
       <button type="submit" class="button"  name="buttonSend"><a class="button_link">Отправить</a></button>
-    </div>
+    </form>
     
     
 
@@ -121,6 +127,7 @@
       <div class="footer_dev">Developed by Ozhgibesova Nastya</div>
     </footer>
   </div>
+  <script src="assets/script/validation.js"></script>
   <script src="assets/script/time.js"></script>
   <script src="assets/script/button.js"></script>
   <script src="assets/script/calendar.js"></script>

@@ -135,6 +135,11 @@ body{
   margin:25px 0 25px;
   font-size: 17px;
 }
+
+/* Checkbox */
+.checkbox{
+  margin-top: 20px;
+}
 /* Блок со столами */
 .reserve_tables{
   display: flex;
@@ -228,7 +233,11 @@ body{
   padding-bottom: 10px;
   text-align: center;
 }
-
+.error_message{
+  margin-top: 20px;
+  color: rgb(240, 52, 52);
+  font-size: 20px;
+}
 
 /*Подвал*/
  .footer{
