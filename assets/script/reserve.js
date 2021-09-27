@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {})
 // преобразование в массив (Array.from(...))
 	const tables = Array.from(document.getElementsByClassName('allTables'));
 	const elemBtns = Array.from(document.getElementsByClassName('date_time_button'));
+	const date = document.getElementById('dateToday');
+	const btnDisabled = document.getElementById("buttonSend");
 	
 	if (elemBtns != '' || elemBtns != null){
 		//перебор элементов массива
@@ -22,8 +24,25 @@ document.addEventListener("DOMContentLoaded", () => {})
 			});
 		};
 	}
+	if (date.value != '' && elemBtn ==  "activeTime" && elemTables.classList ==  "activeTable"){
+		btnDisabled.disabled = false; 
+	}
+	else{
+		btnDisabled.disabled = true;
+	}
 
-function activeElements(activeElem, activeClass, event){
-	activeElem.forEach( elem => elem.classList.remove(activeClass));
-	event.target.classList.toggle(activeClass);
-}
+	// if (date.value != '' && elemBtns.classList ==  "activeTime" && elemTables.classList ==  "activeTable" ){
+		
+	// } else{
+	// 	console.log("error");
+	// }
+
+	// function check(){
+	// 	document.getElementById('buttonSend').disabled = false;
+	//   } 
+
+	function activeElements(activeElem, activeClass, event){
+		activeElem.forEach( elem => elem.classList.remove(activeClass));
+		event.target.classList.toggle(activeClass);
+	}
+

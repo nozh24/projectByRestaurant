@@ -136,10 +136,6 @@ body{
   font-size: 17px;
 }
 
-/* Checkbox */
-.checkbox{
-  margin-top: 20px;
-}
 /* Блок со столами */
 .reserve_tables{
   display: flex;
@@ -154,10 +150,7 @@ body{
 .reserve_big_tables{
   margin-left: 20px;
 }
-/* Отступ нижних блоков  */
-/* .reserve_big_table_double:last-child, .reserve_small_table_double:last-child{
-  margin-top: 19px;
-} */
+
 .allTables{
     transition: .4s linear;
 }
@@ -198,6 +191,9 @@ body{
 }
 
 /* Кнопка */
+.btnDisabled:disabled{
+   opacity: 0.5;
+}
 .button{
   margin-top: 40px;
   transition: .3s linear;

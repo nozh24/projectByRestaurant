@@ -4,6 +4,7 @@ const fullName = document.getElementById("full_name"),
       form = document.getElementById("data_form"),
       errorElement = document.getElementById("error");
 
+
 form.addEventListener('submit', (e) =>{
     let regexPhone = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
     let regexEmail = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
@@ -36,5 +37,7 @@ form.addEventListener('submit', (e) =>{
     if (messages.length > 0){
         e.preventDefault();
         errorElement.innerText = messages.join(", ");
-    } 
+    } else {
+        errorElement.innerText = '';
+    }   
 })
