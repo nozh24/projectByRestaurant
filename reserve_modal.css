@@ -191,7 +191,7 @@ body{
 }
 
 /* Кнопка  */
- .btnDisabled{
+button[disabled]{
   opacity: 0.5;
 }
 .no_link{
