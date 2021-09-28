@@ -190,13 +190,13 @@ body{
   margin-top: 15px;
 }
 
-/* Кнопка */
-/* .btnDisabled{
+/* Кнопка  */
+ .btnDisabled{
   opacity: 0.5;
 }
 .no_link{
   pointer-events: none;
-} */
+}
 .button{
   margin-top: 40px;
   transition: .3s linear;
