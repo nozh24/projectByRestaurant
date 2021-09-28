@@ -163,6 +163,10 @@ body{
 .mlTable{
   margin-left: 50px;
 }
+.disTable{
+  pointer-events: none;
+  opacity: .5;
+}
 /* Параметры стола для 2 человек*/
 .table_4{
   width: 177px;

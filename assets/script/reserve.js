@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {})
 		this.reset();
 	}
 
-	function reserveElements() {
+	function reserveElements(email) {
 		const reserves = JSON.parse(localStorage.getItem("reserves") || '[]' );
 		
 		if (!reserves) {
@@ -69,13 +69,19 @@ document.addEventListener("DOMContentLoaded", () => {})
 			table: currentTable,
 			email: email,
 		};
+
+		if (reserves.find(reserve => {
+			return reserve.date == reserveElements.date && 
+					reserve.time == reserveElements.time && 
+					reserve.table == reserveElements.table
+				})
+		) {
+			alert('Такая бронь уже есть');
+			return;
+		}
+
 		reserves.push(reserveElements);
 		localStorage.setItem("reserves", JSON.stringify(reserves));	
-
-		if (localStorage.getItem(table)){
-			
-
-		}
 	}
 
 	itemsForm.addEventListener('submit', reserveUser)
