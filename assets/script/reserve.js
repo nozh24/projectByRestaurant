@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {})
 		for (let elemBtn of elemBtns){
 			elemBtn.addEventListener('click', (event) => {
 				activeElements(elemBtns, "activeTime", event, 'time');
-				localStorage.setItem('time', event.target.innerText);
+				// localStorage.setItem('time', event.target.innerText);
 				currentTime = event.target.innerText;
 				setActiveContinueButton();
 			});
@@ -49,27 +49,33 @@ document.addEventListener("DOMContentLoaded", () => {})
 		const comments = document.getElementById('comments').value;
 
 		event.preventDefault();
-		const user = { fullName, email, phone, comments};
+		let user = {fullName, email, phone, comments};
 		users.push(user);
+		
 		localStorage.setItem("users", JSON.stringify(users));
-
-		reserveElements(users.email);
+		reserveElements(user.email);	
 		this.reset();
 	}
 
-	function reserveElements(userEmail) {
-		const reserves = JSON.parse(localStorage.getItem("reserves") || '[]');
+	function reserveElements() {
+		const reserves = JSON.parse(localStorage.getItem("reserves") || '[]' );
+		
 		if (!reserves) {
 			reserves = [];
 		}
-		
-		reserves.push({
+		const reserveElements = {
 			date: date.value,
 			time: currentTime,
 			table: currentTable,
-			userEmail
-		});
-		localStorage.setItem("reserves", JSON.stringify(reserves));
+			email: email,
+		};
+		reserves.push(reserveElements);
+		localStorage.setItem("reserves", JSON.stringify(reserves));	
+
+		if (localStorage.getItem(table)){
+			
+
+		}
 	}
 
 	itemsForm.addEventListener('submit', reserveUser)
@@ -78,20 +84,17 @@ document.addEventListener("DOMContentLoaded", () => {})
 		const existsDate = date.value.length > 0;
 		let existsActiveTime = false;
 		let existsActiveTable = false;
-
 		for (let elemBtn of elemBtns){
 			if (elemBtn.className.includes("activeTime")){
 				existsActiveTime = true;
 			}
 		};
-
 		for (let elemTables of tables){
 			// разблокировка кнопки при выполнении всех условий
 			if (elemTables.className.includes("activeTable")){
 				existsActiveTable = true;
 			}
 		};
-
 		if (existsDate && existsActiveTime && existsActiveTable) {
 			buttonSend.removeAttribute('disabled')
 		} else {
