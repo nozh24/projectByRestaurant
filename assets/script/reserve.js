@@ -71,13 +71,15 @@ document.addEventListener("DOMContentLoaded", () => {})
 		};
 
 		if (reserves.find(reserve => {
-			return reserve.date == reserveElements.date && 
+					reserve.date == reserveElements.date && 
 					reserve.time == reserveElements.time && 
 					reserve.table == reserveElements.table
 				})
 		) {
-			alert('Такая бронь уже есть');
-			return;
+			// alert('Такая бронь уже есть');
+			// return;
+
+			reserveElements.table.classList.add("disTable");
 		}
 
 		reserves.push(reserveElements);
