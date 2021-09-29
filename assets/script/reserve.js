@@ -1,5 +1,5 @@
 //подрузка скрипта со страницей
-document.addEventListener("DOMContentLoaded", () => {})
+// document.addEventListener("DOMContentLoaded", () => {})
 // преобразование в массив (Array.from(...))
 	const tables = Array.from(document.getElementsByClassName('allTables'));
 	const elemBtns = Array.from(document.getElementsByClassName('date_time_button'));
@@ -78,8 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {})
 		) {
 			// alert('Такая бронь уже есть');
 			// return;
-
-			reserveElements.table.classList.add("disTable");
+			reserveElements.table.classList.add("disable");
 		}
 
 		reserves.push(reserveElements);
@@ -114,4 +113,11 @@ document.addEventListener("DOMContentLoaded", () => {})
 		document.getElementById('data_form').scrollIntoView();
 	});
 
+	const btnSubmit = document.getElementById('btnSubmit');
+	function reserActiveElements(){
+	btnSubmit.addEventListener('click', () => {
+		document.getElementsByClassName('reserve').reset();
+	 	// alert(true);
+	})
+}
 

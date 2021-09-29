@@ -153,6 +153,7 @@ body{
 
 .allTables{
     transition: .4s linear;
+    cursor: pointer;
 }
 .activeTable{
   -webkit-box-shadow: 6px -1px 37px 12px rgba(244, 168, 45, 0.2);
@@ -163,7 +164,7 @@ body{
 .mlTable{
   margin-left: 50px;
 }
-.disTable{
+.disable{
   pointer-events: none;
   opacity: .5;
 }
