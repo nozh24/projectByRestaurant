@@ -69,16 +69,22 @@
 			table: currentTable,
 			email: email,
 		};
-
 		if (reserves.find(reserve => {
 					reserve.date == reserveElements.date && 
 					reserve.time == reserveElements.time && 
 					reserve.table == reserveElements.table
 				})
 		) {
+			for (let elemTables of tables){
+				if (elemTables.className.includes("activeTable")){
+					// elemTables.classList.remove("activeTable");
+					// reserveElements.elemTables.classList.add("disable");
+					alert('стол занят');
+				}
+			};
 			// alert('Такая бронь уже есть');
 			// return;
-			reserveElements.table.classList.add("disable");
+			// reserveElements.table.classList.add("disable");
 		}
 
 		reserves.push(reserveElements);
@@ -113,11 +119,24 @@
 		document.getElementById('data_form').scrollIntoView();
 	});
 
-	const btnSubmit = document.getElementById('btnSubmit');
-	function reserActiveElements(){
-	btnSubmit.addEventListener('click', () => {
-		document.getElementsByClassName('reserve').reset();
-	 	// alert(true);
+	const buttonSubmit = document.getElementById('buttonSubmit');
+	
+	buttonSubmit.addEventListener('click', () => {
+		//document.getElementsByClassName('reserve').reset();
+			date.value = "";
+
+		 for (let elemTables of tables){
+			if (elemTables.className.includes("activeTable")){
+					elemTables.classList.remove("activeTable");
+				// reserveElements.elemTables.classList.add("disable");
+			}
+		};
+		for (let elemBtn of elemBtns){
+			if (elemBtn.className.includes("activeTime")){
+				elemBtn.classList.remove("activeTime");
+			}
+		};
+
 	})
-}
+
 
