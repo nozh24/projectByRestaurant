@@ -128,12 +128,13 @@ buttonSubmit.addEventListener('click', () => {
 
 		for (let elemTables of tables){
 		if (elemTables.className.includes("activeTable")){
-				elemTables.classList.remove("activeTable");
+			elemTables.classList.remove("activeTable");
+			// elemTables.classList.add("disable");
 		}
 	};
 	for (let elemBtn of elemBtns){
 		if (elemBtn.className.includes("activeTime")){
-			elemBtn.classList.remove("activeTime");
+				elemBtn.classList.remove("activeTime");
 		}
 	};
 
