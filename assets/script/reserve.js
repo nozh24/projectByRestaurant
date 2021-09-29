@@ -123,7 +123,8 @@ const buttonSubmit = document.getElementById('buttonSubmit');
 
 buttonSubmit.addEventListener('click', () => {
 	//document.getElementsByClassName('reserve').reset();
-	date.value = "";
+	date.value = null;
+	
 	buttonSend.setAttribute('disabled', 'disabled');
 
 		for (let elemTables of tables){
